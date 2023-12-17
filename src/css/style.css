@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  
+  padding: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+nav ul li:nth-child(1){
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+.section {
+  padding: .5rem;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  background: rgba(0, 0, 0, .1);
+  gap: 1rem;
+}
+.card {
+  width: 20rem;
+  background: white;
+
+  position: relative;
+}
+.card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all .5s;
+}
+.card > img:hover{
+  transform: scale(1.1);
+}
+.card > i {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+}
+.card > p:hover{
+  cursor: pointer;
+}
+.details{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  
+
+}
+.details > img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  transition: all .5s;
+
+}
+.details > img:hover{
+  transform: scale(1.1);
+  
+}
+.details > div > p{
+  font-weight: 800;
+
+}
+@media screen and (max-width: 675px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details{
+    flex-direction: column;
+  }
+}
