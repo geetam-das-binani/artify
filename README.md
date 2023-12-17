@@ -6,6 +6,7 @@ Artify is a web application that allows users to explore and appreciate various 
 -[Features](#features)
 -[Installation](#installation)
 -[Technologies Used](#technologies-used)
+-[Usage](#usage)
 
 ## Features
 
@@ -27,3 +28,10 @@ Artify is a web application that allows users to explore and appreciate various 
 HTML
 CSS
 JavaScript
+
+## Usage
+
+Open the app in your web browser.
+Explore different art styles using the navigation menu.
+Click on an image to view its details.
+Like an image to add it to your favorites.
